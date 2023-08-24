@@ -6,7 +6,7 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import config from '../config.js';
 import {
   AiFillStar,
   AiOutlineHome,
@@ -15,6 +15,10 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { BiCoffeeTogo } from "react-icons/bi";
+import { MdOutgoingMail } from "react-icons/md";
+
+
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -58,50 +62,77 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
+            {config.about.enabled && (
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                </Nav.Link>
+              </Nav.Item>
+            )}
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
+            {config.projects.enabled && (
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/project"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginBottom: "2px" }}
+                  />{" "}
+                  Projects
+                </Nav.Link>
+              </Nav.Item>
+            )}
+            {config.resume.enabled && (
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/resume"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                </Nav.Link>
+              </Nav.Item>
+            )}
+            
+            {config.contact.enabled && (
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to='/contact'
+                  onClick={() => updateExpanded(false)}
+                >
+                  <MdOutgoingMail style={{ marginBottom: "2px" }} /> Contacter
+                </Nav.Link>
+              </Nav.Item>)}
+            {config.buyMeACoffee.enabled && (
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to={config.buyMeACoffee.url}
+                  onClick={() => updateExpanded(false)}
+                >
+                  <BiCoffeeTogo style={{ marginBottom: "2px" }} /> Soutenir
+                </Nav.Link>
+              </Nav.Item>)}
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/fullann/PortfolioV2"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
+            {config.forkProjet.enabled && (
+              <Nav.Item className="fork-btn">
+                <Button
+                  href="https://github.com/fullann/PortfolioV2"
+                  target="_blank"
+                  className="fork-btn-inner"
+                >
+                  <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                  <AiFillStar style={{ fontSize: "1.1em" }} />
+                </Button>
+              </Nav.Item>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

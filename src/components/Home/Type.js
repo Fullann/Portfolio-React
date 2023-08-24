@@ -1,16 +1,11 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-
+import config from '../../config.js';
 function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+        strings: config.listTitle,
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

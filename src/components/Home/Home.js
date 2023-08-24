@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import config from '../../config.js';
 
 function Home() {
   return (
@@ -14,12 +15,12 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!
+                Bonjour
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name">  Nathan Füllemann</strong>
+                Je m'appelle
+                <strong className="main-name">  {config.name}</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
