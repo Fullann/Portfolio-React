@@ -25,10 +25,10 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Jali Bot"
+              description="Ce projet a été réaliser dans le cadre du confinment en 2020. En recherche de chose a faire je me suis pencher sur les bot discord car a cause du confinemnt j était assez souvent sur cette application Malhueureusement ce projet n'est pas fini pour le moment"
+              ghLink="https://github.com/Fullann/JALI-BOT"
+              //demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -36,10 +36,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Jali Site"
+              description="Ce projet a été réaliser dans le cadre de la suite de mon premier gros projet en infomatique. Jali mon bot discord de managment de server.Malhueureusement ce projet n'est pas fini pour le moment ainsi que le bot Jali"
+              ghLink="https://github.com/Fullann/JALI-SITE"
+              //demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -47,10 +47,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="PortfolioV1"
+              description="Ce projet a été réaliser dans le cadre de la fin de l'ETML et de la recherche d'emplois.Ce portfolio est complétement customisable. Tous les adones (i18n,blog,project,review,cv,connexion, etc) peuvent etre actionner ou non"
+              ghLink="https://github.com/Fullann/PortfolioV1/"
+              //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -58,10 +58,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="SerialPortFramesSender"
+              description="Ce projet a été réaliser dans le cadre de tests sur des signaux d'autoroute.Je devais en comprendre le fonctionnement et le système d'envoie et de reception de trame."
+              ghLink="https://github.com/Fullann/SerialPortFramesSender"
+              //demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -69,9 +69,9 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="TodoList"
+              description="Ce projet a été réaliser dans le cadre de mon organisation personnel😅. Grace a ce projet je ne perd pas le file des me tache et obligation dans ma vie personnel. Grace a cette todolist on peut créer plusieur tableau,plusieurs tâche ainsi que le customiser complétement."
+              ghLink="https://github.com/Fullann/TodoList"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
@@ -80,10 +80,9 @@ function Projects() {
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Yuki-Decrypt"
+              description="Ce projet a été réaliser dans le cadre d'un projet de cybersécurité a l'ETML. Nous avions le choix entre une multitude de projet qui touche de loin ou de pres à la sécurité informatique.Pour ma part le craquage de mot de passe ma toujous plus donc je me suis întéressé au différent type de hashage (ici 3 : MD5/SHA1/SHA256) avec un système de brut force et en parallèle sur un autre tread un craquage avec plusieur rainbow table des mot de passe les plus utiliser en 2021."
+              ghLink="https://github.com/Fullann/YUKI-Decrypt"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
