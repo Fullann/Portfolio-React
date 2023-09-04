@@ -3,8 +3,6 @@ const config = {
     domain: 'fullann.ch',
     email: 'nathan@fullann.ch',
 
-    listTitle: ['Développeur', 'Designer', 'Programmeur'],
-
     darkmode: {
         enabled: false
     },

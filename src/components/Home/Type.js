@@ -1,11 +1,11 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import config from '../../config.js';
-function Type() {
+
+function Type(listTranslate) {
   return (
     <Typewriter
       options={{
-        strings: config.listTitle,
+        strings: listTranslate.listTitle,
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

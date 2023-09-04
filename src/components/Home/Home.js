@@ -25,7 +25,7 @@ function Home({t}) {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <Type listTitle={t('home.listTranslate',{ returnObjects: true })}/>
               </div>
             </Col>
 

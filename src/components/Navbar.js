@@ -34,12 +34,10 @@ function NavBar() {
   }
 
   function handleFrenchClick() {
-    // Code pour changer la langue en français, si nécessaire
     i18n.changeLanguage('fr-FR');
   };
 
   function handleEnglishClick() {
-    // Code pour changer la langue en anglais
     i18n.changeLanguage('en-US');
   };
   window.addEventListener("scroll", scrollHandler);
@@ -146,10 +144,10 @@ function NavBar() {
             <Nav.Item>
               <div>
                 <button  onClick={() => handleFrenchClick()}>
-                  <img src="chemin-vers-le-drapeau-francais.png" alt="Drapeau français" />
+                 Francais
                 </button>
                 <button  onClick={() => handleEnglishClick()}>
-                  <img src="chemin-vers-le-drapeau-anglais.png" alt="Drapeau anglais" />
+                  Anglais
                 </button>
               </div>
             </Nav.Item>
