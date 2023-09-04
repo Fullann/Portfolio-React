@@ -31,36 +31,44 @@ i18n
           home: {
             Hello: "Hi",
             MyName: "My name is",
-            listTranslate:['Développeur', 'Designer', 'Programmeur'],
+            listTranslate: ['Développeur', 'Designer', 'Programmeur'],
             myself: {
               intro: "I discovered IT on a work placement. The creativity and freedom that computer development allows me was something I really enjoyed.",
               code: "I code in",
               etml: "",
               heig: "",
-              github:""
-            }
+              github: ""
+            },
+            listRecommandation: [{ name: 'Angelica Rosso', designation: 'Directrice Recherche et Developpement', src: 'Assets/image/entreprise/solmani/solmani_logo.png', linkedin: 'https://www.linkedin.com/in/angelicarosso/', content: 'Organisé, concencieux, ponctuel et professionnel, Monsieur Füllemann, nous a fait une bonne impression. Il s\u0027est aquitté des tâches confiées à notre entière satisfaction.' },
+
+            ],
           }
         }
       },
       fr: {
         translation: {
-          multiple:{
-            follow:'Suivez moi sur',
+          multiple: {
+            follow: 'Suivez moi sur',
           },
           home: {
             Hello: "Bonjour",
             MyName: "Mon nom est ",
-            im:'Je suis',
-            listTranslate:['Développeur', 'Designer', 'Programmeur'],
-            workat:"J'ai travaillié chez :",
+            im: 'Je suis',
+            listTranslate: ['Développeur', 'Designer', 'Programmeur'],
+            workat: "J'ai travaillié chez :",
             myself: {
-              introTitle :"JE ME PRésente",
+              introTitle: "JE ME PRésente",
               intro: "J'ai découvert l'informatique lors d'un stage. La création et la liberté que permet le developpent informatique m'ont directement plus.",
               code: "Je code en",
               etml: "Après 4 ans a l'ETML d'où je ressort avec un CFC et une matu pro",
               heig: "Je suis acctuelement entrain de passer mon bachelor en sécurité informatique à l'HEIG-VD",
-              github:"J'ai fais différents projets lors de ma formation et en privé.Ils sont disonible sur mon "
-            }
+              github: "J'ai fais différents projets lors de ma formation et en privé.Ils sont disonible sur mon "
+            },
+            recommandation: 'Mes recommandations :',
+            listRecommandation: [
+              { name: 'Angelica Rosso', designation: 'Directrice Recherche et Developpement', src: 'Assets/image/entreprise/solmani/solmani_logo.png', linkedin: 'https://www.linkedin.com/in/angelicarosso/', content: 'Organisé, concencieux, ponctuel et professionnel, Monsieur Füllemann, nous a fait une bonne impression. Il s\u0027est aquitté des tâches confiées à notre entière satisfaction.' },
+
+            ],
           }
 
         }

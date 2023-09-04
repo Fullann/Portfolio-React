@@ -5,7 +5,6 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import WorkAt from "../WorkAt";
-
 import config from '../../config.js';
 import { withTranslation } from 'react-i18next';
 
@@ -26,12 +25,14 @@ function Home({ t }) {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left", display: 'flex' }}>
-                <h1 className="home-header" style={{marginRight:'10px'}}>{t('home.im')}</h1><Type listTitle={t('home.listTranslate', { returnObjects: true })} />
+                <h1 className="home-header" style={{ marginRight: '10px' }}>{t('home.im')}</h1><Type listTitle={t('home.listTranslate', { returnObjects: true })} />
               </div>
-              <div className="heading-workat">
-                {t('home.workat')}
-                <WorkAt WorkAtlist={config.workedAt.meta} />
-              </div>
+              {config.workedAt.enabled && (
+                <div className="heading-workat">
+                  {t('home.workat')}
+                  <WorkAt WorkAtlist={config.workedAt.meta} />
+                </div>
+              )}
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
@@ -46,6 +47,7 @@ function Home({ t }) {
         </Container>
       </Container>
       <Home2 />
+      
     </section>
   );
 }

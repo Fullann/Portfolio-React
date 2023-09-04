@@ -18,7 +18,7 @@ const config = {
     },
 
     about: {
-        enabled: false,
+        enabled: true,
         meta: [
             { title: 'OS', value: 'Windows 11' },
             { title: 'Memory', value: '16 GB 2667 MHz DDR4' },
@@ -53,12 +53,8 @@ const config = {
             { name: 'Solmani SA', src: 'Assets/image/entreprise/solmani/solmani.svg', url: 'https://solmani.ch' },
         ]
     },
-    recommendations: {
+    recommandations: {
         enabled: true,
-        meta: [
-            { name: 'Angelica Rosso', designation: 'Directrice Recherche et Developpement', image: '/images/entreprise/solmani/solmani_logo.png', linkedin: 'https://www.linkedin.com/in/angelicarosso/', content: 'Organisé, concencieux, ponctuel et professionnel, Monsieur Füllemann, nous a fait une bonne impression. Il s\u0027est aquitté des tâches confiées à notre entière satisfaction.' },
-
-        ]
     }
 }
 
