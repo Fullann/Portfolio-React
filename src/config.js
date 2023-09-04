@@ -33,10 +33,10 @@ const config = {
     },
     resume: {
         enabled: true,
-        pdfUrl: '/NathanFüllemann-CV_2023.pdf' // add files in static folder
+        pdfUrl: '/NathanFüllemann-CV_2023.pdf'
     },
     buyMeACoffee: {
-        enabled: true,
+        enabled: false,
         url: 'https://www.buymeacoffee.com/Fullann'
     },
     contact: {
@@ -45,6 +45,7 @@ const config = {
     },
     forkProjet: {
         enabled: false,
+        link: 'https://github.com/fullann/PortfolioV2',
     },
     workedAt: {
         // add logos in static and at max add 3/4

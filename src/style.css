@@ -135,7 +135,19 @@ button:focus {
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
 }
+.flag-button {
+  border: none; /* Supprime la bordure */
+  background: none; /* Supprime l'arrière-plan */
+  cursor: pointer;
+  padding: 0; /* Supprime le rembourrage */
+  border-radius: 8px; /* Bords arrondis */
+}
 
+/* Styles pour le drapeau français */
+.speak-flag {
+  width: 32px; /* Largeur du drapeau */
+  height: 24px; /* Hauteur du drapeau */
+}
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;

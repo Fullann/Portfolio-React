@@ -3,6 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/image/fullannlogo/logo.png";
+import frflag from "../Assets/image/lang/france-flag.svg";
+import usaflag from "../Assets/image/lang/united-states-of-america-flag-usa.svg";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -18,8 +20,6 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { MdOutgoingMail } from "react-icons/md";
-
-
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -128,11 +128,22 @@ function NavBar() {
                   <BiCoffeeTogo style={{ marginBottom: "2px" }} /> Soutenir
                 </Nav.Link>
               </Nav.Item>)}
-
+            {config.laguageSwitcher.enabled && (
+              <Nav.Item>
+                <div style={{display:"flex"}}>
+                  <button className="flag-button" onClick={() => handleFrenchClick()}>
+                    <img src={frflag} className="" alt="frlanguage" />
+                  </button>
+                  <button className="flag-button nav-link" onClick={() => handleEnglishClick()}>
+                    <img src={usaflag} className="" alt="andlanguage" />
+                  </button>
+                </div>
+              </Nav.Item>
+            )}
             {config.forkProjet.enabled && (
               <Nav.Item className="fork-btn">
                 <Button
-                  href="https://github.com/fullann/PortfolioV2"
+                  href={config.forkProjet.link}
                   target="_blank"
                   className="fork-btn-inner"
                 >
@@ -141,18 +152,7 @@ function NavBar() {
                 </Button>
               </Nav.Item>
             )}
-            {config.laguageSwitcher.enabled && (
-            <Nav.Item>
-              <div>
-                <button  onClick={() => handleFrenchClick()}>
-                 Francais
-                </button>
-                <button  onClick={() => handleEnglishClick()}>
-                  Anglais
-                </button>
-              </div>
-            </Nav.Item>
-            )}
+
           </Nav>
         </Navbar.Collapse>
       </Container>
