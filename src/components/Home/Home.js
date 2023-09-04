@@ -4,9 +4,11 @@ import homeLogo from "../../Assets/image/profile/home-profile.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import config from '../../config.js';
 
-function Home() {
+import config from '../../config.js';
+import { withTranslation } from 'react-i18next';
+
+function Home({t}) {
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -15,11 +17,10 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Bonjour
+              {t('home.Hello')}
               </h1>
-
               <h1 className="heading-name">
-                Je m'appelle
+              {t('home.MyName')}
                 <strong className="main-name">  {config.name}</strong>
               </h1>
 
@@ -44,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default withTranslation(['translation', 'common'])(Home);

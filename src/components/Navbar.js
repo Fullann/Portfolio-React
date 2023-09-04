@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import config from '../config.js';
+import i18n from "i18next";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -32,6 +33,15 @@ function NavBar() {
     }
   }
 
+  function handleFrenchClick() {
+    // Code pour changer la langue en français, si nécessaire
+    i18n.changeLanguage('fr-FR');
+  };
+
+  function handleEnglishClick() {
+    // Code pour changer la langue en anglais
+    i18n.changeLanguage('en-US');
+  };
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -99,7 +109,7 @@ function NavBar() {
                 </Nav.Link>
               </Nav.Item>
             )}
-            
+
             {config.contact.enabled && (
               <Nav.Item>
                 <Nav.Link
@@ -133,6 +143,16 @@ function NavBar() {
                 </Button>
               </Nav.Item>
             )}
+            <Nav.Item>
+              <div>
+                <button  onClick={() => handleFrenchClick()}>
+                  <img src="chemin-vers-le-drapeau-francais.png" alt="Drapeau français" />
+                </button>
+                <button  onClick={() => handleEnglishClick()}>
+                  <img src="chemin-vers-le-drapeau-anglais.png" alt="Drapeau anglais" />
+                </button>
+              </div>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

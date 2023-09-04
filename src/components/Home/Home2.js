@@ -2,15 +2,17 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/image/profile/about.png";
 import Tilt from "react-parallax-tilt";
+import { withTranslation } from 'react-i18next';
 import config from '../../config.js';
+
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn,FaCodepen } from "react-icons/fa";
+import { FaLinkedinIn, FaCodepen } from "react-icons/fa";
 
-function Home2() {
+function Home2({ t }) {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -20,19 +22,18 @@ function Home2() {
               JE ME <span className="purple"> PRésente </span>
             </h1>
             <p className="home-about-body">
-              J'ai découvert l'informatique lors d'un stage. La création et la liberté que permet le developpent informatique m'ont directement plus.
+              {t('home.myself.intro')}
               <br />
-              <br />Je code en
+              <br />{t('home.myself.code')}
               <i>
-                <b className="purple"> C#, Javascript and PHP. </b>
+                <b className="purple"> C#, Javascript, PHP. </b>
               </i>
               <br />
+              <br />{t('home.myself.etml')}
+              <br />{t('home.myself.heig')}
               <br />
-              Après 4 ans a l'ETML d'où je ressort avec un <b className="purple">CFC et une matu pro</b> &nbsp;
-              Je suis acctuelement entrain de passer mon <b className="purple">bachelor</b> à l'HEIG-VD
-              <br />
-              <br />
-              J'ai fais différents projets lors de ma formation et en privé.Ils sont disonible sur mon <b className="purple">Github</b>
+              <br />{t('home.myself.github')}
+              <b className="purple">Github</b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -115,4 +116,4 @@ function Home2() {
     </Container>
   );
 }
-export default Home2;
+export default withTranslation(['translation', 'common'])(Home2);
