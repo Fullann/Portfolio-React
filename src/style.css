@@ -225,7 +225,7 @@ button:focus {
   /* Change to speed up or slow down */
   animation-iteration-count: infinite;
   /* Never stop waving :) */
-  transform-origin: 70% 70%;
+  transform-origin: 90% 90%;
   /* Pivot around the bottom-left palm */
   display: inline-block;
 }

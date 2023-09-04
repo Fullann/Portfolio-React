@@ -14,22 +14,9 @@ function Home2({ t }) {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em", textTransform: "uppercase" }}>
-              {t('home.myself.introTitle')}
+              <p dangerouslySetInnerHTML={{ __html: t('home.myself.introTitle') }} />
             </h1>
-            <p className="home-about-body">
-              {t('home.myself.intro')}
-              <br />
-              <br />{t('home.myself.code')}
-              <i>
-                <b className="purple"> C#, Javascript, PHP. </b>
-              </i>
-              <br />
-              <br />{t('home.myself.etml')}
-              <br />{t('home.myself.heig')}
-              <br />
-              <br />{t('home.myself.github')}
-              <b className="purple">Github</b>
-            </p>
+            <p className="home-about-body" dangerouslySetInnerHTML={{ __html: t('home.myself.intro') }} />
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -41,7 +28,7 @@ function Home2({ t }) {
           <Col>
             {config.recommandations.enabled && (
               <Container className='home-content' style={{ marginBottom: '50px' }}>
-                <h1 style={{ color: 'whitesmoke', textAlign: 'left' }} className="heading-header">{t('home.recommandation')}</h1>
+                <h1 style={{ color: 'whitesmoke', textAlign: 'left', textTransform: "uppercase" }} className="heading-header"><p dangerouslySetInnerHTML={{ __html: t('home.recommandation') }} /></h1>
                 <Recommandations listRecommandation={t('home.listRecommandation', { returnObjects: true })} />
               </Container>
             )}
@@ -49,7 +36,7 @@ function Home2({ t }) {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>{t('multiple.follow')}</h1>
+            <h1 style={{ textTransform: "uppercase" }}> <p dangerouslySetInnerHTML={{ __html: t('multiple.follow') }} /> </h1>
             <Social></Social>
           </Col>
         </Row>

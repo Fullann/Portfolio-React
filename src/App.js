@@ -46,23 +46,19 @@ i18n
       fr: {
         translation: {
           multiple: {
-            follow: 'Suivez moi sur',
+            follow: "me <b class='purple'>retouver</b> sur",
           },
           home: {
-            Hello: "Bonjour",
+            Hello: "<b class='purple'>Bonjour</b>",
             MyName: "Mon nom est ",
             im: 'Je suis',
             listTranslate: ['Développeur', 'Designer', 'Programmeur'],
-            workat: "J'ai travaillié chez :",
+            workat: "J'ai <b class='purple'>travaillié</b> chez :",
             myself: {
-              introTitle: "JE ME PRésente",
-              intro: "J'ai découvert l'informatique lors d'un stage. La création et la liberté que permet le developpent informatique m'ont directement plus.",
-              code: "Je code en",
-              etml: "Après 4 ans a l'ETML d'où je ressort avec un CFC et une matu pro",
-              heig: "Je suis acctuelement entrain de passer mon bachelor en sécurité informatique à l'HEIG-VD",
-              github: "J'ai fais différents projets lors de ma formation et en privé.Ils sont disonible sur mon "
+              introTitle: "JE ME <b class='purple'>PRésente</b>",
+              intro: "J'ai découvert l'<b class='purple'>informatique</b> lors d'un stage fait à 15ans et la création et la liberté que permet le <b class='purple'>developpent</b> informatique m'ont directement plu.<br><br>Je code en <b class='purple'>C#, Javascript, PHP</b> principalement.<br><br>Après 4 ans a l'ETML d'où je ressort avec un <b class='purple'>CFC et une matu pro</b><br><br>Je suis acctuelement entrain de passer mon <b class='purple'>bachelor en sécurité informatique</b> à l'HEIG-VD<br><br>J'ai fais différents projets lors de ma formation et en privé.<br>Certains sont disonible sur mon <b class='purple'>Github</b>",
             },
-            recommandation: 'Mes recommandations :',
+            recommandation: "Mes <b class='purple'>recommandations</b>",
             listRecommandation: [
               { name: 'Angelica Rosso', designation: 'Directrice Recherche et Developpement', src: 'Assets/image/entreprise/solmani/solmani_logo.png', linkedin: 'https://www.linkedin.com/in/angelicarosso/', content: 'Organisé, concencieux, ponctuel et professionnel, Monsieur Füllemann, nous a fait une bonne impression. Il s\u0027est aquitté des tâches confiées à notre entière satisfaction.' },
             ],

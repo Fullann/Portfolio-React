@@ -16,8 +16,11 @@ function Home({ t }) {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                {t('home.Hello')}
+              <h1 style={{ paddingBottom: 15 ,display:'flex'}} className="heading">
+                <p dangerouslySetInnerHTML={{ __html: t('home.Hello')}}/>
+                <span className="wave" role="img" aria-labelledby="wave">
+                👻
+                </span>
               </h1>
               <h1 className="heading-name">
                 {t('home.MyName')}
@@ -29,7 +32,7 @@ function Home({ t }) {
               </div>
               {config.workedAt.enabled && (
                 <div className="heading-workat">
-                  {t('home.workat')}
+                  <p dangerouslySetInnerHTML={{ __html: t('home.workat')}}/>
                   <WorkAt WorkAtlist={config.workedAt.meta} />
                 </div>
               )}
