@@ -3,14 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/image/profile/about.png";
 import Tilt from "react-parallax-tilt";
 import { withTranslation } from 'react-i18next';
-import config from '../../config.js';
-
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn, FaCodepen } from "react-icons/fa";
+import Social from '../Social.js';
 
 function Home2({ t }) {
   return (
@@ -19,7 +12,7 @@ function Home2({ t }) {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em", textTransform: "uppercase" }}>
-              JE ME <span className="purple"> PRésente </span>
+            {t('home.myself.introTitle')}
             </h1>
             <p className="home-about-body">
               {t('home.myself.intro')}
@@ -44,72 +37,8 @@ function Home2({ t }) {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>Suivez moi </h1>
-            <p>
-              Vous pouvez me<span className="purple"> trouver </span>sur
-            </p>
-            <ul className="home-about-social-links">
-              {config.social.github !== "" && (
-                <li className="social-icons">
-                  <a
-                    href={config.social.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <AiFillGithub />
-                  </a>
-                </li>
-              )}
-              {config.social.twitter !== "" && (
-                <li className="social-icons">
-                  <a
-                    href={config.social.twitter}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <AiOutlineTwitter />
-                  </a>
-                </li>
-              )}
-              {config.social.linkedin !== "" && (
-                <li className="social-icons">
-                  <a
-                    href={config.social.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-              )}
-              {config.social.instagram !== "" && (
-                <li className="social-icons">
-                  <a
-                    href={config.social.instagram}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour home-social-icons"
-                  >
-                    <AiFillInstagram />
-                  </a>
-                </li>
-              )}
-              {config.social.codepen !== "" && (
-                <li className="social-icons">
-                  <a
-                    href={config.social.codepen}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour home-social-icons"
-                  >
-                    <FaCodepen />
-                  </a>
-                </li>
-              )}
-            </ul>
+            <h1>{t('multiple.follow')}</h1>
+           <Social></Social>
           </Col>
         </Row>
       </Container>

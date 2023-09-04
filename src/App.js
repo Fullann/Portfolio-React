@@ -43,10 +43,14 @@ i18n
       },
       fr: {
         translation: {
+          multiple:{
+            follow:'Suivez moi sur',
+          },
           home: {
             Hello: "Bonjour",
             MyName: "Mon nom est ",
             myself: {
+              introTitle :"JE ME PRésente",
               intro: "J'ai découvert l'informatique lors d'un stage. La création et la liberté que permet le developpent informatique m'ont directement plus.",
               code: "Je code en",
               etml: "Après 4 ans a l'ETML d'où je ressort avec un CFC et une matu pro",
@@ -62,7 +66,7 @@ i18n
     fallbackLng: "en",
 
     interpolation: {
-      escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
+      escapeValue: false
     }
   });
 
