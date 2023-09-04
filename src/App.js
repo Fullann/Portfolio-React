@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Contact from "./components/Contact/Contact";
 import {
   BrowserRouter as Router,
   Route,
@@ -22,9 +23,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    // the translations
-    // (tip move them in a JSON file and import them,
-    // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
     resources: {
       en: {
         translation: {
@@ -105,6 +103,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer />
       </div>
