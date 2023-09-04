@@ -31,7 +31,7 @@ i18n
           home: {
             Hello: "Hi",
             MyName: "My name is",
-            listTitle:['Développeur', 'Designer', 'Programmeur'],
+            listTranslate:['Développeur', 'Designer', 'Programmeur'],
             myself: {
               intro: "I discovered IT on a work placement. The creativity and freedom that computer development allows me was something I really enjoyed.",
               code: "I code in",
@@ -50,7 +50,9 @@ i18n
           home: {
             Hello: "Bonjour",
             MyName: "Mon nom est ",
-            listTitle:['Développeur', 'Designer', 'Programmeur'],
+            im:'Je suis',
+            listTranslate:['Développeur', 'Designer', 'Programmeur'],
+            workat:"J'ai travaillié chez :",
             myself: {
               introTitle :"JE ME PRésente",
               intro: "J'ai découvert l'informatique lors d'un stage. La création et la liberté que permet le developpent informatique m'ont directement plus.",

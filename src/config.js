@@ -50,7 +50,7 @@ const config = {
         // add logos in static and at max add 3/4
         enabled: true,
         meta: [
-            { name: 'Solmani SA', src: '/images/entreprise/solmani/solmani.svg', url: 'https://solmani.ch' },
+            { name: 'Solmani SA', src: 'Assets/image/entreprise/solmani/solmani.svg', url: 'https://solmani.ch' },
         ]
     },
     recommendations: {

@@ -141,6 +141,7 @@ function NavBar() {
                 </Button>
               </Nav.Item>
             )}
+            {config.laguageSwitcher.enabled && (
             <Nav.Item>
               <div>
                 <button  onClick={() => handleFrenchClick()}>
@@ -151,6 +152,7 @@ function NavBar() {
                 </button>
               </div>
             </Nav.Item>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
