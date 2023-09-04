@@ -2,7 +2,7 @@ const config = {
     name: 'Nathan Füllemann',
     domain: 'fullann.ch',
     email: 'nathan@fullann.ch',
-
+    username:'Fullann',
     darkmode: {
         enabled: false
     },
@@ -40,7 +40,7 @@ const config = {
         url: 'https://www.buymeacoffee.com/Fullann'
     },
     contact: {
-        enabled: true,
+        enabled: false,
         email: 'nathan@fullann.ch'
     },
     forkProjet: {
@@ -48,7 +48,6 @@ const config = {
         link: 'https://github.com/fullann/PortfolioV2',
     },
     workedAt: {
-        // add logos in static and at max add 3/4
         enabled: true,
         meta: [
             { name: 'Solmani SA', src: 'Assets/image/entreprise/solmani/solmani.svg', url: 'https://solmani.ch' },

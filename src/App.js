@@ -65,14 +65,20 @@ i18n
             recommandation: 'Mes recommandations :',
             listRecommandation: [
               { name: 'Angelica Rosso', designation: 'Directrice Recherche et Developpement', src: 'Assets/image/entreprise/solmani/solmani_logo.png', linkedin: 'https://www.linkedin.com/in/angelicarosso/', content: 'Organisé, concencieux, ponctuel et professionnel, Monsieur Füllemann, nous a fait une bonne impression. Il s\u0027est aquitté des tâches confiées à notre entière satisfaction.' },
-
             ],
+          },
+          about:{
+            titleMe:"Deux trois <b class='purple'>informations</b> sur moi",
+            MyCard:"Je m'appelle <b class='purple'>Nathan Füllemann</b> et je vis à Lausanne en Suisse. <br><br>J'ai commencé l'informatique à <b class='purple'>l'ETML</b> et le fait que l'on soit totallement libre en developpement m'a tout de suite plu.<br>Je suis acctuellement à <b class='purple'>l'HEIG-VD</b> pour faire un <b class='purple'>bachelor en sécurité informatique</b>.<br><br>Sinon a part l'informatique j'aime faire du sport, faire de la photographie et faire de la musique...",
+            languageUsed:"<b class='purple'>Les outils</b> que je métrise",
+            logicielUsed:"<b class='purple'>Les logiciels</b> que j'utilise",
+            pushDone:"Push fait sur <b class='purple'>Github</b>"
           }
 
         }
       }
     },
-    lng: "en", // if you're using a language detector, do not define the lng option
+    lng: "fr", // if you're using a language detector, do not define the lng option
     fallbackLng: "en",
 
     interpolation: {
