@@ -5,16 +5,15 @@ import HCaptcha from '@hcaptcha/react-hcaptcha';
 import Particle from "../Particle";
 import homeLogo from "../../Assets/image/profile/home-profile.png";
 import emailjs from '@emailjs/browser';
-import { notifications } from '@mantine/notifications';
 
 function ContactForm({ t }) {
   let check = false;
+
   const [formData, setFormData] = useState({
     email: '',
     subject: '',
     message: '',
   });
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,25 +28,13 @@ function ContactForm({ t }) {
     e.preventDefault();
     if (check) {
       emailjs.sendForm(process.env.REACT_APP_MAIL_SERVICE, process.env.REACT_APP_MAIL_TEMPLATE, e.target, process.env.REACT_APP_MAIL_PUBLIC_KEY)
-      notifications.show({
-        title: 'Default notification',
-        message: 'Hey there, your code is awesome! 🤥',
-      })
+
       setFormData({
         email: '',
         subject: '',
         message: '',
       });
-
-    } else {
-      console.log(notifications.show({
-        title: 'Default notification',
-        message: 'Hey there, your code is awesome! 🤥',
-      }))
-      
     }
-
-
   };
 
   return (
@@ -71,6 +58,7 @@ function ContactForm({ t }) {
                     className="custom-input"
                   />
                 </div>
+
                 <div>
                   <label className='custom-label' htmlFor="subject">Sujet :</label>
                   <input
@@ -102,16 +90,12 @@ function ContactForm({ t }) {
                   onExpire={() => onToken('')}
                   onError={(err) => {
                     onToken('');
-                    notifications.show({
-                      title: 'Error',
-                      message: 'Cannot verify captcha',
-                    });
+
                     console.error(err);
                   }}
                 />
               </div>
               <button className='custom-button' type="submit">Envoyer</button>
-
             </form>
           </Col>
 
@@ -124,6 +108,7 @@ function ContactForm({ t }) {
             />
           </Col>
         </Row>
+       
       </Container>
     </Container>
   );
