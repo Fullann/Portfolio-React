@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import {initReactI18next } from "react-i18next";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -21,7 +21,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources: {
       en: {
@@ -69,6 +69,9 @@ i18n
             languageUsed:"<b class='purple'>Les outils</b> que je métrise",
             logicielUsed:"<b class='purple'>Les logiciels</b> que j'utilise",
             pushDone:"Push fait sur <b class='purple'>Github</b>"
+          },
+          contact:{
+            title:"Intéressé à <b class='purple'>travailler ensemble ?</b>"
           }
 
         }
@@ -84,7 +87,7 @@ i18n
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  const { t } = useTranslation();
+
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);

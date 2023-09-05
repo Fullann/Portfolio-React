@@ -12,7 +12,10 @@ import {
   SiPhp,
   SiFirebase,
   SiMysql,
-  SiCsharp
+  SiCsharp,
+  SiNuxtdotjs,
+  SiTailwindcss,
+  SiLaravel
 } from "react-icons/si";
 import { FaVuejs } from "react-icons/fa";
 
@@ -32,6 +35,9 @@ function Techstack() {
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiNuxtdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -40,7 +46,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiPhp />
       </Col>
-
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLaravel />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
@@ -52,6 +60,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTailwindcss />
       </Col>
     </Row>
   );

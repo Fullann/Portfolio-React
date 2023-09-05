@@ -40,7 +40,7 @@ const config = {
         url: 'https://www.buymeacoffee.com/Fullann'
     },
     contact: {
-        enabled: false,
+        enabled: true,
         email: 'nathan@fullann.ch'
     },
     forkProjet: {

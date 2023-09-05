@@ -781,3 +781,44 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+.custom-input {
+  background-color: #333; /* Fond foncé */
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 7px; /* Coins arrondis */
+  color: white; /* Couleur du texte */
+  padding: 5px 10px; /* Espacement intérieur */
+  width:100%,
+}
+/* Style des étiquettes <label> */
+.custom-label {
+  font-weight: bold; /* Texte en gras */
+  margin-bottom: 5px; /* Espacement sous l'étiquette */
+  display: block; /* Met en ligne chaque étiquette sur une nouvelle ligne */
+}
+
+/* Style du bouton d'envoi */
+.custom-button {
+  background-color: #6932a8; /* Fond du bouton */
+  color: white; /* Couleur du texte */
+  border: none; /* Supprime la bordure */
+  border-radius: 7px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement intérieur */
+  cursor: pointer; /* Curseur au survol */
+  transition: background-color 0.3s ease; /* Transition en douceur */
+}
+
+.custom-button:hover {
+  background-color: #501c82; /* Changement de couleur au survol */
+}
+
+.custom-textarea {
+  background-color: #333; /* Fond foncé */
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 7px; /* Coins arrondis */
+  color: white; /* Couleur du texte */
+  padding: 10px; /* Espacement intérieur */
+  height: 150px; /* Hauteur de la zone de texte */
+  width: 100%;
+}
