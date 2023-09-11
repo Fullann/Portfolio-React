@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import config from '../config.js';
 import i18n from "i18next";
+import { withTranslation } from 'react-i18next';
 import {
   AiFillStar,
   AiOutlineHome,
@@ -21,7 +22,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { MdOutgoingMail } from "react-icons/md";
 
-function NavBar() {
+function NavBar({ t }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -67,7 +68,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {t('menu.home')}
               </Nav.Link>
             </Nav.Item>
             {config.about.enabled && (
@@ -77,7 +78,7 @@ function NavBar() {
                   to="/about"
                   onClick={() => updateExpanded(false)}
                 >
-                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                  <AiOutlineUser style={{ marginBottom: "2px" }} /> {t('menu.about')}
                 </Nav.Link>
               </Nav.Item>
             )}
@@ -92,7 +93,7 @@ function NavBar() {
                   <AiOutlineFundProjectionScreen
                     style={{ marginBottom: "2px" }}
                   />{" "}
-                  Projects
+                   {t('menu.projects')}
                 </Nav.Link>
               </Nav.Item>
             )}
@@ -103,7 +104,7 @@ function NavBar() {
                   to="/resume"
                   onClick={() => updateExpanded(false)}
                 >
-                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                  <CgFileDocument style={{ marginBottom: "2px" }} />  {t('menu.cv')}
                 </Nav.Link>
               </Nav.Item>
             )}
@@ -115,7 +116,7 @@ function NavBar() {
                   to='/contact'
                   onClick={() => updateExpanded(false)}
                 >
-                  <MdOutgoingMail style={{ marginBottom: "2px" }} /> Contacter
+                  <MdOutgoingMail style={{ marginBottom: "2px" }} />  {t('menu.contact')}
                 </Nav.Link>
               </Nav.Item>)}
             {config.buyMeACoffee.enabled && (
@@ -160,4 +161,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default withTranslation(['translation', 'common'])(NavBar);
