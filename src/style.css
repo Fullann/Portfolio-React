@@ -831,4 +831,5 @@ button:focus {
 }
 .titlecard:hover {
   color: #ae54e386 !important;
+  cursor: pointer;
 }

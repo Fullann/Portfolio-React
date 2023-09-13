@@ -1,18 +1,93 @@
 [
     {
         "id": 1,
-        "title": "Project 1",
-        "tech": ["React", "JavaScript", "HTML"],
-        "github":"asd",
-        "demoLink":"asd",
-        "desc":"asd",
-        "imgname":"portfoliov1.png",
+        "title": "Jali Bot",
+        "tech": ["NodeJS", "Discord.JS"],
+        "github":"https://github.com/Fullann/JALI-BOT",
+        "demoLink":"",
+        "desc":"Bot discord de managment de server",
+        "imgname":"",
         "text":""
 
       },
       {
         "id": 2,
-        "title": "Project 2",
-        "tech": ["Vue.js", "JavaScript", "CSS"]
+        "title": "Jali Site",
+        "tech": ["VueJS", "Tailwind","NodeJS"],
+        "github":"https://github.com/Fullann/JALI-SITE",
+        "demoLink":"",
+        "desc":"Site d'administration d'un bot discord avec api entre le site et le bot qui permet l'insertion de donnée dans un db.",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 3,
+        "title": "PortfolioV1",
+        "tech": ["VueJS", "Tailwind","NodeJS","Fierbase"],
+        "github":"https://github.com/Fullann/PortfolioV1",
+        "demoLink":"",
+        "desc":"Site de présentation de moi-même",
+        "imgname":"portfoliov1.png",
+        "text":""
+      },
+      {
+        "id": 4,
+        "title": "PortfolioV2",
+        "tech": ["React","NodeJS"],
+        "github":"https://github.com/Fullann/PortfolioV2",
+        "demoLink":"https://me.fullann.ch",
+        "desc":"Site de présentation de moi-même",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 5,
+        "title": "SerialPortFramesSender",
+        "tech": ["C#"],
+        "github":"https://github.com/Fullann/SerialPortFramesSender",
+        "demoLink":"",
+        "desc":"Logiciel d'envoie de trame en hexadécimal",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 6,
+        "title": "TodoList",
+        "tech": ["React","NodeJS","Fierbase"],
+        "github":"https://github.com/Fullann/TodoList",
+        "demoLink":"",
+        "desc":"Site web pour créer une application de todo list complétement customisable pour chaqu'un.",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 7,
+        "title": "Yahtzee",
+        "tech": ["C#","Xamarin"],
+        "github":"https://github.com/Fullann/SerialPortFramesSender",
+        "demoLink":"",
+        "desc":"Jeux du Yahtzee fais en Xamrin/C# pour un projet d'application mobile à l'ETML",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 8,
+        "title": "Yuki-Decrypt",
+        "tech": ["C#"],
+        "github":"https://github.com/Fullann/YUKI-Decrypt",
+        "demoLink":"",
+        "desc":"Logiciel de décryption de hash (MD5/SHA1/SHA256) avec brutforce et rainbow table",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 9,
+        "title": "Runéo",
+        "tech": ["PHP","Laravel"],
+        "github":"",
+        "demoLink":"",
+        "desc":"Projet pour l'administration des runs d'un festival en locurance le Paléo et les Eurockennes de Belfort",
+        "imgname":"",
+        "text":""
       }
   ]

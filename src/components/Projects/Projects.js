@@ -92,7 +92,7 @@ function Projects() {
 
         <Row className="mt-5">
           {combinedProjects.map((project) => (
-            <Col key={project.id} lg={4} md={6} sm={12} className="hover:-rotate-12">
+            <Col key={project.id} lg={4} md={6} sm={12}  style={{marginTop:"30px"}} className="hover:-rotate-12">
               <ProjectCard
                 imgPath={project.image}
                 title={project.title}
