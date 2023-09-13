@@ -539,7 +539,7 @@ button:focus {
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
-  border-radius: 10px !important;
+  border-radius: 10% !important;
 }
 
 .blog-img {
@@ -821,4 +821,14 @@ button:focus {
   padding: 10px; /* Espacement intérieur */
   height: 150px; /* Hauteur de la zone de texte */
   width: 100%;
+}
+.subtilecard{
+  color: #a24dd386 !important;
+  cursor: context-menu;
+}
+.subtilecard:hover {
+  color: #ae54e386 !important;
+}
+.titlecard:hover {
+  color: #ae54e386 !important;
 }

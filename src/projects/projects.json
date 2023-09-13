@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "title": "Project 1",
+        "tech": ["React", "JavaScript", "HTML"],
+        "github":"asd",
+        "demoLink":"asd",
+        "desc":"asd",
+        "imgname":"portfoliov1.png",
+        "text":""
+
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "tech": ["Vue.js", "JavaScript", "CSS"]
+      }
+  ]
