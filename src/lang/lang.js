@@ -35,6 +35,10 @@ const en = {
         },
         contact: {
             title: "Interested in <b class='purple'>working together?</b>."
+        },
+        projects:{
+            title:"Projects",
+            desc:"This page lists some of my personal and professional projects. Click on it for more information."
         }
     }
 }
@@ -74,6 +78,10 @@ const fr = {
         },
         contact: {
             title: "Intéressé à <b class='purple'>travailler ensemble ?</b>"
+        },
+        projects:{
+            title:"Projets",
+            desc:"Cette page énumère certains de mes projets personnels et professionnels. Pour plus d'information cliquer dessus."
         }
     }
 }

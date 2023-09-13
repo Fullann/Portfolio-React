@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-
+import { withTranslation } from 'react-i18next';
 const ALL = 'all';
 
-function Projects() {
+function Projects({t}) {
   const projectsJson = require('../../projects/projects.json');
   const [projects] = useState(projectsJson);
   const [currentTech, setCurrentTech] = useState(ALL);
@@ -59,8 +59,8 @@ function Projects() {
       <Container className="home-content border-r border-l border-dashed border-gray-700 py-6 mx-auto">
         <Row className="text-center">
           <Col >
-            <h2 className="text-2xl tracking-tight font-extrabold text-gray-200">projets - Votre Nom</h2>
-            <p className="mt-2 px-2 max-w-2xl mx-auto text-sm leading-7 text-gray-400">Description de vos projets.</p>
+            <h2 className="text-2xl tracking-tight font-extrabold text-gray-200" dangerouslySetInnerHTML={{ __html: t('projects.title')}}/>
+            <p className="mt-2 px-2 max-w-2xl mx-auto text-sm leading-7 text-gray-400" dangerouslySetInnerHTML={{ __html: t('projects.desc')}}/>
           </Col>
         </Row>
 
@@ -109,4 +109,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default withTranslation(['translation', 'common'])(Projects);

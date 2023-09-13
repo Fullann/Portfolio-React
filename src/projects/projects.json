@@ -89,5 +89,25 @@
         "desc":"Projet pour l'administration des runs d'un festival en locurance le Paléo et les Eurockennes de Belfort",
         "imgname":"",
         "text":""
+      },
+      {
+        "id": 10,
+        "title": "Espace Chamarel",
+        "tech": ["WordPress"],
+        "github":"",
+        "demoLink":"",
+        "desc":"Site web pour la partie art-therapie de l'Espace Chamarel de Vufflens-la-Ville",
+        "imgname":"",
+        "text":""
+      },
+      {
+        "id": 11,
+        "title": "Vufflens-la-Gym",
+        "tech": ["WordPress"],
+        "github":"",
+        "demoLink":"https://vufflens-la-gym.ch",
+        "desc":"Site web de la société de gym de Vufflens-la-Ville",
+        "imgname":"",
+        "text":""
       }
   ]
