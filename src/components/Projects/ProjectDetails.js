@@ -81,7 +81,7 @@ function ProjectDetails({ t }) {
                     </Row>
                     <Row style={{marginTop:'40px'}}>
                         <Col>
-                            <p style={{ color: 'white' }} dangerouslySetInnerHTML={{ __html: project.text }} />
+                            <p style={{ color: 'white',position:'relative' }} dangerouslySetInnerHTML={{ __html: project.text }} />
                         </Col>
                     </Row>
 
