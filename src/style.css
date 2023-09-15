@@ -829,6 +829,11 @@ button:focus {
 .subtilecard:hover {
   color: #ae54e386 !important;
 }
+.titlecard {
+  color: #700c86 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
 .titlecard:hover {
   color: #ae54e386 !important;
   cursor: pointer;

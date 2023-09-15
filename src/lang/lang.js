@@ -37,8 +37,9 @@ const en = {
             title: "Interested in <b class='purple'>working together?</b>."
         },
         projects:{
-            title:"Projects",
-            desc:"This page lists some of my personal and professional projects. Click on it for more information."
+            title:"My projects",
+            desc:"This page lists some of my personal and professional projects. Click on it for more information.",
+            techno:'Technology used :'
         }
     }
 }
@@ -80,8 +81,9 @@ const fr = {
             title: "Intéressé à <b class='purple'>travailler ensemble ?</b>"
         },
         projects:{
-            title:"Projets",
-            desc:"Cette page énumère certains de mes projets personnels et professionnels. Pour plus d'information cliquer dessus."
+            title:"Mes <b class='purple'>projets</b>",
+            desc:"Cette page énumère mes projets personnels et professionnels. <br>Pour plus d'information <b class='purple'>cliquer dessus.</b>",
+            techno:'Technologie utilisée :'
         }
     }
 }

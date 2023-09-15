@@ -65,7 +65,7 @@ function Projects({t}) {
         </Row>
 
         <Row className="px-4">
-          <Col className="home-header text-center" style={{ position: 'relative' }} >
+          <Col className="home-header text-center">
             <div className="nav-container">
               <nav>
                 <Button style={{ marginRight: '10px', marginTop: '10px' }}
@@ -94,6 +94,7 @@ function Projects({t}) {
           {combinedProjects.map((project) => (
             <Col key={project.id} lg={4} md={6} sm={12}  style={{marginTop:"30px"}} className="hover:-rotate-12">
               <ProjectCard
+                id={project.id}
                 imgPath={project.image}
                 title={project.title}
                 tech={project.tech.join(', ')}
