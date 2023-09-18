@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import { withTranslation } from 'react-i18next';
 
 
-function Projects({t}) {
+function Projects({ t }) {
   const ALL = 'all';
   const [projects] = useState(t('projects.liste', { returnObjects: true }));
   const [currentTech, setCurrentTech] = useState(ALL);
@@ -52,21 +52,26 @@ function Projects({t}) {
     };
   });
 
+  const professionalProjects = allProject.filter((project) => project.category === 'professionnel');
+  const personalProjects = allProject.filter((project) => project.category === 'personnel');
+  const ecoleProjects = allProject.filter((project) => project.category === 'school');
+
+
   return (
     <Container fluid className="containerproject">
       <Particle />
       <Container className="home-content border-r border-l border-dashed border-gray-700 py-6 mx-auto">
         <Row className="text-center">
           <Col >
-            <h2 className="text-2xl tracking-tight font-extrabold text-gray-200" dangerouslySetInnerHTML={{ __html: t('projects.title')}}/>
-            <p className="mt-2 px-2 max-w-2xl mx-auto text-sm leading-7 text-gray-400" dangerouslySetInnerHTML={{ __html: t('projects.desc')}}/>
+            <h2 className="text-2xl tracking-tight font-extrabold text-gray-200" dangerouslySetInnerHTML={{ __html: t('projects.title') }} />
+            <p className="mt-2 px-2 max-w-2xl mx-auto text-sm leading-7 text-gray-400" dangerouslySetInnerHTML={{ __html: t('projects.desc') }} />
           </Col>
         </Row>
 
         <Row className="px-4">
           <Col className="home-header text-center">
             <div className="nav-container">
-              <nav style={{position:'relative'}}>
+              <nav style={{ position: 'relative' }}>
                 <Button style={{ marginRight: '10px', marginTop: '10px' }}
                   key={ALL}
                   onClick={() => setCurrentTech(ALL)}
@@ -89,21 +94,77 @@ function Projects({t}) {
           </Col>
         </Row>
 
-        <Row className="mt-5">
-          {allProject.map((project) => (
-            <Col key={project.id} lg={4} md={6} sm={12}  style={{marginTop:"30px"}} className="hover:-rotate-12">
-              <ProjectCard
-                id={project.id}
-                imgPath={project.image}
-                title={project.title}
-                tech={project.tech.join(', ')}
-                description={project.desc}
-                ghLink={project.github !== "" ? project.github : null}
-                demoLink={project.demoLink !== "" ? project.demoLink : null}
-              />
-            </Col>
-          ))}
-        </Row>
+        <div>
+          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titlePro') }}/>
+          <Row>
+            {professionalProjects.map((project) => (
+              <Col
+                key={project.id}
+                lg={4}
+                md={6}
+                sm={12}
+                style={{ marginTop: "30px" }}
+                className="hover:-rotate-12"
+              >
+                <ProjectCard
+                  id={project.id}
+                  imgPath={project.image}
+                  title={project.title}
+                  tech={project.tech.join(', ')}
+                  description={project.desc}
+                  ghLink={project.github !== "" ? project.github : null}
+                  demoLink={project.demoLink !== "" ? project.demoLink : null}
+                />
+              </Col>
+            ))}
+          </Row>
+          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titlePerso') }} />
+          <Row>
+            {personalProjects.map((project) => (
+              <Col
+                key={project.id}
+                lg={4}
+                md={6}
+                sm={12}
+                style={{ marginTop: "30px" }}
+                className="hover:-rotate-12"
+              >
+                <ProjectCard
+                  id={project.id}
+                  imgPath={project.image}
+                  title={project.title}
+                  tech={project.tech.join(', ')}
+                  description={project.desc}
+                  ghLink={project.github !== "" ? project.github : null}
+                  demoLink={project.demoLink !== "" ? project.demoLink : null}
+                />
+              </Col>
+            ))}
+          </Row>
+          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titleSchool') }}/>
+          <Row>
+            {ecoleProjects.map((project) => (
+              <Col
+                key={project.id}
+                lg={4}
+                md={6}
+                sm={12}
+                style={{ marginTop: "30px" }}
+                className="hover:-rotate-12"
+              >
+                <ProjectCard
+                  id={project.id}
+                  imgPath={project.image}
+                  title={project.title}
+                  tech={project.tech.join(', ')}
+                  description={project.desc}
+                  ghLink={project.github !== "" ? project.github : null}
+                  demoLink={project.demoLink !== "" ? project.demoLink : null}
+                />
+              </Col>
+            ))}
+          </Row>
+        </div>
       </Container>
     </Container>
   );

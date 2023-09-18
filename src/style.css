@@ -838,3 +838,7 @@ button:focus {
   color: #ae54e386 !important;
   cursor: pointer;
 }
+.titleProjet{
+  text-align: center;
+  margin-top: 40px;
+}

@@ -9,8 +9,7 @@ import { BsGithub } from "react-icons/bs";
 function ProjectDetails({ t }) {
     // Récupérez l'ID du projet à partir des paramètres d'URL
     let { id } = useParams();
-    const projectsJson = require('../../projects/projects.json');
-    const [projects] = useState(projectsJson);
+    const [projects] = useState(t('projects.liste', { returnObjects: true }));
     // Recherchez le projet correspondant dans votre liste de projets (supposons que vous avez une liste de projets)
     const project = projects.find((p) => p.id.toString() === id);
 
