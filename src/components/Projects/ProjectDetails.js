@@ -52,7 +52,7 @@ function ProjectDetails({ t }) {
                         <Col md={6}>
                             <h3 dangerouslySetInnerHTML={{ __html: t('projects.techno') }} />
                             <ul>
-                                {project.tech}
+                                {project.tech.join(', ')}
                             </ul>
                             <div style={{ position: 'relative' }}>
                                 {project.github && (

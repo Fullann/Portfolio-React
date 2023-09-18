@@ -7,6 +7,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/image/profile/logo.png";
 import Toolstack from "./Toolstack";
+import LanguageStack from "./LanguageStack";
 import { withTranslation } from 'react-i18next';
 
 function About({ t }) {
@@ -39,6 +40,11 @@ function About({ t }) {
         </Row>
         <h1 className="project-heading">
           <p dangerouslySetInnerHTML={{ __html: t('about.languageUsed') }} />
+        </h1>
+
+        <LanguageStack />
+        <h1 className="project-heading">
+          <p dangerouslySetInnerHTML={{ __html: t('about.outilsUsed') }} />
         </h1>
 
         <Techstack />

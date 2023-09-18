@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { withTranslation } from 'react-i18next';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
@@ -114,4 +114,4 @@ function ContactForm({ t }) {
   );
 }
 
-export default withTranslation(['translation', 'common'])(ContactForm);
+export default withTranslation(['translation', 'common'])(ContactForm);*/

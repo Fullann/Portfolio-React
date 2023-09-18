@@ -3,11 +3,11 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { withTranslation } from 'react-i18next';
-const ALL = 'all';
+
 
 function Projects({t}) {
-  const projectsJson = require('../../projects/projects.json');
-  const [projects] = useState(projectsJson);
+  const ALL = 'all';
+  const [projects] = useState(t('projects.liste', { returnObjects: true }));
   const [currentTech, setCurrentTech] = useState(ALL);
   const [importedImages, setImportedImages] = useState([]);
 
@@ -44,8 +44,7 @@ function Projects({t}) {
     importImages();
   }, [projects]);
 
-  // projectsByTechs doit être combiné avec les images importées
-  const combinedProjects = projectsByTechs.map((project) => {
+  const allProject = projectsByTechs.map((project) => {
     const importedImage = importedImages.find((img) => img.id === project.id);
     return {
       ...project,
@@ -67,13 +66,13 @@ function Projects({t}) {
         <Row className="px-4">
           <Col className="home-header text-center">
             <div className="nav-container">
-              <nav>
+              <nav style={{position:'relative'}}>
                 <Button style={{ marginRight: '10px', marginTop: '10px' }}
                   key={ALL}
                   onClick={() => setCurrentTech(ALL)}
                   className={`nav-button ${currentTech === ALL ? 'nav-active' : ''}`}
                 >
-                  {ALL}
+                  {t('projects.all')}
                 </Button>
                 {Array.from(new Set(projects.flatMap((project) => project.tech))).map((tech) => (
                   <Button style={{ marginRight: '10px', marginTop: '10px' }}
@@ -91,7 +90,7 @@ function Projects({t}) {
         </Row>
 
         <Row className="mt-5">
-          {combinedProjects.map((project) => (
+          {allProject.map((project) => (
             <Col key={project.id} lg={4} md={6} sm={12}  style={{marginTop:"30px"}} className="hover:-rotate-12">
               <ProjectCard
                 id={project.id}
