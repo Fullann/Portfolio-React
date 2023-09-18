@@ -11,6 +11,7 @@ import Resume from "./components/Resume/ResumeNew";
 import Contact from "./components/Contact/Contact";
 import ProjectDetails from "./components/Projects/ProjectDetails";
 
+
 import {
   BrowserRouter as Router,
   Route,
@@ -62,6 +63,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projet/:id" element={<ProjectDetails/>} />
+
         </Routes>
         <Footer />
       </div>
