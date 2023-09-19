@@ -95,7 +95,7 @@ function Projects({ t }) {
         </Row>
 
         <div>
-          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titlePro') }}/>
+          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titlePro') }} />
           <Row>
             {professionalProjects.map((project) => (
               <Col
@@ -141,7 +141,7 @@ function Projects({ t }) {
               </Col>
             ))}
           </Row>
-          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titleSchool') }}/>
+          <h2 className="titleProjet" dangerouslySetInnerHTML={{ __html: t('projects.titleSchool') }} />
           <Row>
             {ecoleProjects.map((project) => (
               <Col
