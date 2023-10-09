@@ -40,8 +40,9 @@ const en = {
             title: "My <b class='purple'>projects</b>",
             desc: "This page lists some of my personal and professional projects. <b class='purple'>Click on it</b> for more information.",
             all: "All",
-            techno: 'Technology used :', liste: [
-        {
+            techno: 'Technology used :', 
+            liste: [
+                {
                     "id": 1,
                     "title": "Jali Bot",
                     "tech": ["NodeJS", "Discord.JS"],
@@ -98,9 +99,9 @@ const fr = {
             desc: "Cette page énumère mes projets personnels et professionnels. <br>Pour plus d'information <b class='purple'>cliquer dessus.</b>",
             all: 'Tous',
             techno: 'Technologie utilisée :',
-            titlePerso:"Projets  <b class='purple'>Personnels</b>",
-            titlePro:"Projets  <b class='purple'>Professionnels</b>",
-            titleSchool:"Projets fait à  <b class='purple'>l'école</b>",
+            titlePerso: "Projets  <b class='purple'>Personnels</b>",
+            titlePro: "Projets  <b class='purple'>Professionnels</b>",
+            titleSchool: "Projets fait à  <b class='purple'>l'école</b>",
             liste: [
                 {
                     "id": 1,
@@ -144,7 +145,7 @@ const fr = {
                     "github": "https://github.com/Fullann/PortfolioV2",
                     "demoLink": "https://me.fullann.ch",
                     "desc": "Site de présentation de moi-même",
-                    "imgname": "",
+                    "imgname": "portfoliov2.png",
                     "text": ""
                 },
                 {
@@ -232,8 +233,20 @@ const fr = {
                     "github": "https://github.com/Fullann/YoutubeDownloader",
                     "demoLink": "https://yt.fullann.ch/",
                     "desc": "Site web pour télécharger des vidéos de Youtube",
-                    "imgname": "",
+                    "imgname": "ytdowloader.png",
                     "text": ""
+                },
+                {
+                    "id": 13,
+                    "title": "MeloDroid",
+                    "tech": ["NodeJS", "Discord.JS"],
+                    "category": 'personnel',
+                    "github": "https://github.com/Fullann/MeloDroid",
+                    "demoLink": "",
+                    "desc": "Bot discord de musique",
+                    "imgname": "melodroid.jpg",
+                    "text": "",
+                    "lastupdate": "2023-10-10"
                 }
             ]
         }
