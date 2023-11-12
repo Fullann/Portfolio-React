@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import Particle from "../Particle";
 import Github from "./Github";
+import ComputerUsed from "./ComputerUsed";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/image/profile/logo.png";
@@ -38,6 +39,15 @@ function About({ t }) {
 
           </Col>
         </Row>
+
+        <div style={{ margin: '10% 0' }}>
+          <h1 className="project-heading">
+            <p dangerouslySetInnerHTML={{ __html: t('about.computerUsed') }} />
+          </h1>
+
+          <ComputerUsed />
+        </div>
+
         <h1 className="project-heading">
           <p dangerouslySetInnerHTML={{ __html: t('about.languageUsed') }} />
         </h1>

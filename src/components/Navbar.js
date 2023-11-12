@@ -119,16 +119,6 @@ function NavBar({ t }) {
                   <MdOutgoingMail style={{ marginBottom: "2px" }} />  {t('menu.contact')}
                 </Nav.Link>
               </Nav.Item>)}
-            {config.buyMeACoffee.enabled && (
-              <Nav.Item>
-                <Nav.Link
-                  as={Link}
-                  to={config.buyMeACoffee.url}
-                  onClick={() => updateExpanded(false)}
-                >
-                  <BiCoffeeTogo style={{ marginBottom: "2px" }} /> Soutenir
-                </Nav.Link>
-              </Nav.Item>)}
             {config.laguageSwitcher.enabled && (
               <Nav.Item>
                 <div style={{display:"flex"}}>
@@ -139,6 +129,18 @@ function NavBar({ t }) {
                     <img src={usaflag} className="" alt="andlanguage" />
                   </button>
                 </div>
+              </Nav.Item>
+            )}
+             {config.buyMeACoffee.enabled && (
+              <Nav.Item className="fork-btn">
+                <Button
+                  href={config.forkProjet.link}
+                  target="_blank"
+                  className="fork-btn-inner"
+                >
+                  <BiCoffeeTogo style={{ fontSize: "1.2em" }} />{" "}
+                  {t('menu.coffee')}
+                </Button>
               </Nav.Item>
             )}
             {config.forkProjet.enabled && (

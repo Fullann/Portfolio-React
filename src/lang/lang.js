@@ -6,7 +6,8 @@ const en = {
             about: 'About',
             projects: 'Projects',
             cv: 'Resume',
-            contact: 'Contact'
+            contact: 'Contact',
+            coffee: 'Buy me a ☕'
         },
         multiple: {
             follow: "<b class='purple'>Follow</b> me on",
@@ -28,8 +29,11 @@ const en = {
         },
         about: {
             titleMe: "Two or three <b class='purple'>information</b> about me",
-            MyCard: "My name is Nathan Füllemann and I live in Lausanne, Switzerland.<br><br>I started studying computer science at the <b class='purple'>ETML</b> and I immediately liked the fact that we were totally free to develop.<br>I'm currently doing a <b class='purple'>bachelor's degree in IT security</b> at <b class='purple'>HEIG-VD</b>.<br><br>Apart from computing, I like sports, photography and music...",
-            languageUsed: "<b class='purple'>The tools</b> I use",
+            MyCard: "My name is <b class='purple'>Nathan Füllemann</b> and I live in Lausanne, Switzerland. I'm a 20-year-old front and backend developer.<br><br>I started studying computer science at the <b class='purple'>ETML</b> and the fact that we're totally free to develop things appealed to me straight away. After spending 4 years at the school, including a year's <b class='purple'>internship at Solmani SA</b>, I came out with a degree in software development. I came out with a <b class='purple'>CFC in general computer science</b>, with a focus on development, and a <b class='purple'>professional maturity</b>. I'm currently studying for a <b class='purple'>bachelor's degree in IT security</b> at <b class='purple'>HEIG-VD</b>.<br><br> Apart from computing, I like sports, photography and <b class='purple'>electronic music</b>...",
+            languageUsed: "The <b class='purple'>programming languages</b> I master",
+            computerUsed: "<b class='purple'>The computer</b> I use",
+            computerText: "I use a <b class='purple'>MacBook Pro 16</b> with <b class='purple'>16GB of RAM</b> and <b class='purple'>512GB of SSD</b>.",
+            outilsUsed: "<b class='purple'>The tools</b> I use",
             logicielUsed: "<b class='purple'>The software</b> I use",
             pushDone: "Push made on <b class='purple'>Github</b>"
         },
@@ -63,7 +67,8 @@ const fr = {
             about: 'À propos',
             projects: 'Projets',
             cv: 'CV',
-            contact: 'Contacter'
+            contact: 'Contacter',
+            coffee: 'Me soutenir !'
         },
         multiple: {
             follow: "me <b class='purple'>retouver</b> sur",
@@ -86,6 +91,8 @@ const fr = {
         about: {
             titleMe: "Deux trois <b class='purple'>informations</b> sur moi",
             MyCard: "Je m'appelle <b class='purple'>Nathan Füllemann</b> et je vis à Lausanne en Suisse. Je suis un jeune front et backend devloppeur de 20ans.<br><br>J'ai commencé l'informatique à <b class='purple'>l'ETML</b> et le fait que l'on soit totallement libre en developpement m'a tout de suite plu. J'ai acquis de nombreuses compétences par mes propres moyens, notamment en suivant des tutoriels sur Internet.Après avoir passer 4 ans dans cette école avec un stage d'une année chez <b class='purple'> Solmani SA</b>. J'en suis ressorti avec un  <b class='purple'>CFC d'informaticien</b> généraliste orienté développement et une <b class='purple'> maturité professionnel</b>.<br><br>Je suis acctuellement à <b class='purple'>l'HEIG-VD</b> pour faire un <b class='purple'>bachelor en sécurité informatique</b>.<br><br>Sinon a part l'informatique j'aime faire du sport, faire de la photographie et faire de la  <b class='purple'>musique électronique</b> ...",
+            computerUsed: "Mon <b class='purple'>ordinateur</b>",
+            computerText: "J'utilise un <b class='purple'>MacBook Pro 16</b> avec <b class='purple'>16GB de RAM</b> et <b class='purple'>512GB de SSD</b>.",
             languageUsed: "Les <b class='purple'>languages de programation</b> que je métrise",
             outilsUsed: "Les <b class='purple'>outils</b> que je métrise",
             logicielUsed: "Les <b class='purple'>logiciels</b> que j'utilise",
