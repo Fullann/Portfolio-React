@@ -40,14 +40,6 @@ function About({ t }) {
           </Col>
         </Row>
 
-        <div style={{ margin: '10% 0' }}>
-          <h1 className="project-heading">
-            <p dangerouslySetInnerHTML={{ __html: t('about.computerUsed') }} />
-          </h1>
-
-          <ComputerUsed />
-        </div>
-
         <h1 className="project-heading">
           <p dangerouslySetInnerHTML={{ __html: t('about.languageUsed') }} />
         </h1>
@@ -63,6 +55,15 @@ function About({ t }) {
           <p dangerouslySetInnerHTML={{ __html: t('about.logicielUsed') }} />
         </h1>
         <Toolstack />
+
+
+        <div style={{ margin: '10% 0' }}>
+          <h1 className="project-heading">
+            <p dangerouslySetInnerHTML={{ __html: t('about.computerUsed') }} />
+          </h1>
+          <ComputerUsed />
+        </div>
+        
         <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
           <p dangerouslySetInnerHTML={{ __html: t('about.pushDone') }} />
         </h1>

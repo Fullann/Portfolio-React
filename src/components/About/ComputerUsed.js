@@ -7,12 +7,13 @@ function ComputerUsed({ t }) {
     return (
         <Row>
             <Col xs={12} md={6}>
+                <Computer />
+            </Col>
+            <Col xs={12} md={6}>
+
                 <blockquote className="blockquote mb-0">
                     <p style={{ textAlign: "justify" }} dangerouslySetInnerHTML={{ __html: t(`about.computerText`) }} />
                 </blockquote>
-            </Col>
-            <Col xs={12} md={6}>
-                <Computer />
             </Col>
         </Row>
     );
