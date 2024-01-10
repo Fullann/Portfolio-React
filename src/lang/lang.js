@@ -34,7 +34,8 @@ const en = {
             computerUsed: "<b class='purple'>The computer</b> I use",
             computerText: "I use a <b class='purple'>MacBook Pro 16</b> with <b class='purple'>16GB of RAM</b> and <b class='purple'>512GB of SSD</b>.",
             outilsUsed: "<b class='purple'>The tools</b> I use",
-            logicielUsed: "<b class='purple'>The software</b> I use",
+            logicielUsed: "The <b class='purple'>software</b> I use",
+            osUsed: "The <b class='purple'>OS</b> I use",
             pushDone: "Push made on <b class='purple'>Github</b>"
         },
         contact: {
@@ -45,6 +46,9 @@ const en = {
             desc: "This page lists some of my personal and professional projects. <b class='purple'>Click on it</b> for more information.",
             all: "All",
             techno: 'Technology used :', 
+            titlePerso: "<b class='purple'>Personal</b> Projects",
+            titlePro: "<b class='purple'>Professional</b> Projects",
+            titleSchool: "<b class='purple'>School</b> Projects",
             liste: [
                 {
                     "id": 1,
@@ -92,10 +96,11 @@ const fr = {
             titleMe: "Deux trois <b class='purple'>informations</b> sur moi",
             MyCard: "Je m'appelle <b class='purple'>Nathan Füllemann</b> et je vis à Lausanne en Suisse. Je suis un jeune front et backend devloppeur de 20ans.<br><br>J'ai commencé l'informatique à <b class='purple'>l'ETML</b> et le fait que l'on soit totallement libre en developpement m'a tout de suite plu. J'ai acquis de nombreuses compétences par mes propres moyens, notamment en suivant des tutoriels sur Internet.Après avoir passer 4 ans dans cette école avec un stage d'une année chez <b class='purple'> Solmani SA</b>. J'en suis ressorti avec un  <b class='purple'>CFC d'informaticien</b> généraliste orienté développement et une <b class='purple'> maturité professionnel</b>.<br><br>Je suis acctuellement à <b class='purple'>l'HEIG-VD</b> pour faire un <b class='purple'>bachelor en sécurité informatique</b>.<br><br>Sinon a part l'informatique j'aime faire du sport, faire de la photographie et faire de la  <b class='purple'>musique électronique</b> ...",
             computerUsed: "Mon <b class='purple'>ordinateur</b>",
-            computerText: "J'utilise un <b class='purple'>MacBook Pro 16</b> avec <b class='purple'>16GB de RAM</b> et <b class='purple'>512GB de SSD</b>.",
+            computerText: "J'utilise un <b class='purple'>MacBook Pro</b> qui me permet de pouvoir programmer dans n'importe quelle condition et à n'importe quel endroit. J'ai aussi une tour sous <b class='purple'>Windows</b> 11 chez moi.<br>Je possède aussi un <b class='purple'>NAS</b> sous OpenMediaVault avec docker ce qui me permet de gérer bon nombre d'applications tel que Nextcloud,Jellyfin,Pihole.<br>De plus tous les sites web fait pour des clients sont héberger sur un <b class='purple'>VPS</b> sous Ubuntu gérer avec CloudPannel.<br>En bref je touche à toute sorte de système d'explotation et ne m'arrête jamais de tester de nouvelles choses.",
             languageUsed: "Les <b class='purple'>languages de programation</b> que je métrise",
             outilsUsed: "Les <b class='purple'>outils</b> que je métrise",
             logicielUsed: "Les <b class='purple'>logiciels</b> que j'utilise",
+            osUsed: "Les <b class='purple'>OS</b> que j'utilise",
             pushDone: "Push fait sur <b class='purple'>Github</b>"
         },
         contact: {
