@@ -212,13 +212,13 @@ const fr = {
                 },
                 {
                     "id": 10,
-                    "title": "Espace Chamarel",
+                    "title": "Art-Bleu",
                     "tech": ["WordPress"],
                     "category": 'professionnel',
                     "github": "",
-                    "demoLink": "",
+                    "demoLink": "https://art-bleu.ch",
                     "desc": "Site web pour la partie art-therapie de l'Espace Chamarel de Vufflens-la-Ville",
-                    "imgname": "",
+                    "imgname": "art-bleu.ch.png",
                     "text": ""
                 },
                 {
@@ -229,7 +229,7 @@ const fr = {
                     "github": "",
                     "demoLink": "https://vufflens-la-gym.ch",
                     "desc": "Site web de la société de gym de Vufflens-la-Ville",
-                    "imgname": "",
+                    "imgname": "vufflens-la-gym.ch.png",
                     "text": ""
                 },
                 {
