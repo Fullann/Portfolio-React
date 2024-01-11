@@ -135,7 +135,7 @@ const fr = {
                     "github": "https://github.com/Fullann/JALI-SITE",
                     "demoLink": "",
                     "desc": "Site d'administration d'un bot discord avec api entre le site et le bot qui permet l'insertion de donnée dans un db.",
-                    "imgname": "",
+                    "imgname": "jali-site.png",
                     "text": "<h1 id=\"jali-site\">Jali Site</h1><h2 id=\"introduction\">Introduction</h2><p>Ce projet a été réalisé dans le cadre de la suite de mon premier gros projet en informatique. Jali, mon bot Discord de management de serveur. Malheureusement, ce projet n'est pas encore terminé pour le moment, ainsi que le bot Jali.</p><h2 id=\"instalation\">Installation</h2><p>Il vous suffit de cloner le répertoire</p><pre><code>git <span class=\"hljs-keyword\">clone</span> <span class=\"hljs-title\">https://github.com/Fullann/JALI-SITE.git</span></code></pre><p>Installer les dépendances</p><pre><code>npm <span class=\"hljs-keyword\">run</span><span class=\"bash\"> init</span></code></pre><p>Puis copiez le .env.example</p><pre><code><span class=\"hljs-selector-tag\">cp</span> <span class=\"hljs-selector-class\">.env</span><span class=\"hljs-selector-class\">.example</span> <span class=\"hljs-selector-class\">.env</span></code></pre><ul><li>Ensuite, à l'intérieur, mettez l'id de votre bot et le lien vers l'API</li></ul><p>Puis démarrez le projet</p><pre><code>npm <span class=\"hljs-keyword\">run</span><span class=\"bash\"> serve</span></code></pre><p>Et enjoy ;)</p>"
                 },
                 {
