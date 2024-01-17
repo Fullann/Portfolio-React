@@ -11,7 +11,6 @@ import Resume from "./components/Resume/ResumeNew";
 import Contact from "./components/Contact/Contact";
 import ProjectDetails from "./components/Projects/ProjectDetails";
 
-
 import {
   BrowserRouter as Router,
   Route,

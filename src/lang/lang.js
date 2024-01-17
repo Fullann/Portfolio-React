@@ -243,7 +243,7 @@ const fr = {
                     "tech": ["NodeJS", "React"],
                     "category": 'personnel',
                     "github": "https://github.com/Fullann/YoutubeDownloader",
-                    "demoLink": "https://yt.fullann.ch/",
+                    "demoLink": "",
                     "desc": "Site web pour télécharger des vidéos de Youtube",
                     "imgname": "ytdowloader.png",
                     "text": ""
